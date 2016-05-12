@@ -7,9 +7,9 @@
 
 ## How to
 
-> This is not working not very well on left hand with the layout switcher swith. But seems related to my layout!
+> This is not working very well on left hand with the layout switcher switch. But it seems related to my layout!
 
-I love the [emojis](https://twitchemotes.com/channel/dansgaming) of [dansgaming](https://www.twitch.tv/dansgaming) and I love the ergdox. I saw that @tenderlove made a nice custom [with DangerZone logo](https://gist.github.com/tenderlove/193e027b1670af6f9c85) and [Ivan Tam with a 💀](http://asciipr0n.net/ergodox-infinity-logo/). I wanted to make a new one.
+I love the [emojis](https://twitchemotes.com/channel/dansgaming) of [dansgaming](https://www.twitch.tv/dansgaming) and I love the ergdox. I saw that @tenderlove made a nice custom ergodox logo [with DangerZone logo](https://gist.github.com/tenderlove/193e027b1670af6f9c85) and [Ivan Tam with a 💀](http://asciipr0n.net/ergodox-infinity-logo/). I wanted to make a new one.
 
 I've started with the emoji.
 
@@ -23,7 +23,7 @@ Then on osx I follow [this guide](https://github.com/kiibohd/controller/wiki/How
 
 With python3 : `python3 controller/Scan/STLcd/bitmap2Struct.py path/of/danGasmLcd.bmp`
 
-It will return a by chunck copy it and past it into a kill file similiar to [this one](danGasmLcd.kll) :
+It will return a big chunck. Copy it and past it into a kll file similiar to [this one](danGasmLcd.kll) :
 
 ```
 Name = image;
@@ -45,7 +45,7 @@ Then you are ready to edit the bash script to compile the files. Go to `controll
 
 Add all the KLL (the one of from the configurator) don't forget to add `danGasmLcd` to [the file](ergodox_dangasm.bash).
 
-Run `bash ergodox.bash -f`
+Run `bash ergodox-copy.bash`
 
 You have now 2 folders `ICED-L` and `ICED-R` run in each one `dfu-util -D kiibohd.dfu.bin` after you put your ergodox in flash mode.
 
