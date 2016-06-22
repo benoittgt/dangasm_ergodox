@@ -39,13 +39,13 @@ STLcdDefaultImage = "
 ";
 ```
 
-Save it to the layout folder (`controller/kll/layouts/`) with the other kll you get from [the configurator](http://configurator.input.club/?layout=MDErgo1-Default).
+Save it to the layout folder (`controller/kll/layouts/`) with the other kll you get from [the configurator](http://configurator.input.club/?layout=MDErgo1-Default). You should have 3 `MDErgo1-Default-*.kll` files.
 
-Then you are ready to edit the bash script to compile the files. Go to `controller/Keyboards` and edit a copy of `ergodox.bash`
+Then you are ready to edit the bash script to compile the files. Go to `controller/Keyboards` and edit a copy of `ergodox.bash` named `ergodox_dangasm.bash`.
 
 Add all the KLL (the one of from the configurator) don't forget to add `danGasmLcd` to [the file](ergodox_dangasm.bash).
 
-Run `bash ergodox-copy.bash`
+Run `bash ergodox_dangasm.bash`
 
 You have now 2 folders `ICED-L` and `ICED-R` run in each one `dfu-util -D kiibohd.dfu.bin` after you put your ergodox in flash mode.
 
